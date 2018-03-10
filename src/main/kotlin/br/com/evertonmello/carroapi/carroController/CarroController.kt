@@ -3,12 +3,10 @@ package br.com.evertonmello.carroapi.carroController
 import br.com.evertonmello.carroapi.entity.Carro
 import br.com.evertonmello.carroapi.service.CarroService
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PostMapping
-import org.springframework.web.bind.annotation.RequestBody
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 @RestController
+@RequestMapping( "/carro")
 class CarroController{
 
     @Autowired
