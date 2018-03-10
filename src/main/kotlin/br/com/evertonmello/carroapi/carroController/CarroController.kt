@@ -19,5 +19,10 @@ class CarroController{
         return carroService.buscarTodos()
     }
 
+    @PostMapping
+    fun salvarCarro(@RequestBody carro: Carro){
+        return carroService.salvar(carro)
+    }
+
 
 }
