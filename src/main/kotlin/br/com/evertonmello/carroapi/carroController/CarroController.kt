@@ -22,5 +22,10 @@ class CarroController{
         return carroService.salvar(carro)
     }
 
+    @DeleteMapping("/all")
+    fun deleteAll(){
+        return carroService.deleteAll()
+    }
+
 
 }

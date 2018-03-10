@@ -29,4 +29,8 @@ class CarroService{
         carroRepository.save(carro)
     }
 
+    fun deleteAll() {
+        carroRepository.deleteAll()
+    }
+
 }
